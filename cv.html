@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhesica Cespedes | Portafolio</title>
+    <link rel="icon" type="image/x-icon" href="img/alas doradas.jpg">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <style>
+        h1 {
+            font-size: 19px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        @media (min-width: 601px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+        }
+
+        @media (min-width: 993px) {
+            h1 {
+                font-size: 50px;
+            }
+
+            h2 {
+                font-size: 47px;
+            }
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #0A3D2F;
+        }
+
+
+        .w3-display-middle h1 {
+            color: #ffffff;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+
+
+        h2 {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 12px;
+            margin-bottom: 30px;
+        }
+
+
+
+
+        .w3-padding h2 {
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            margin-top: 8px;
+            margin-bottom: 20px;
+        }
+
+
+        .project-card h3 {
+            color: #0A3D2F;
+            font-size: 1.35rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+
+        #skills h2 {
+            color: #0A3D2F;
+            font-size: 2.8rem;
+            margin-bottom: 50px;
+        }
+
+
+        #contacto h2 {
+            color: #0A3D2F;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero-content {
+            padding: 30px;
+        }
+
+        .github-icon img {
+            width: 18px;
+            height: 18px;
+        }
+
+        .curriculum-grid,
+        .projects-card {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .curriculum-grid .w3-col>div {
+            height: 100%;
+        }
+
+
+        .skill-item img {
+            filter: brightness(0.95);
+        }
+
+        .skill-item span {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .interest-item {
+            background: rgba(16, 63, 12, 0.342);
+            border-radius: 14px;
+            padding: 1.1rem 0.8rem;
+            margin-bottom: 3%;
+            text-align: center;
+        }
+
+        footer {
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(96, 34, 52, 0.3);
+            background: var(--bg-dark);
+        }
+
+        .social-links {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .social-links img {
+            animation: bounce 2s infinite;
+            width: 36px;
+            height: 36px;
+            object-fit: cover;
+            filter: brightness(0.95);
+        }
+
+        .negro {
+            background-color: #050505;
+        }
+
+        .verde {
+            background-color: hsl(101, 100%, 86%);
+        }
+
+        .verde-oscuro {
+            background-color: #64965c;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="position: fixed; position: sticky; top: 0; z-index: 100;">
+        <div class="w3-bar w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Jhesica Cespedes Encinas</a>
+            <a href="https://github.com/Elimoncc" class="github-icon w3-bar-item" target="_blank"
+                rel="noopener noreferrer" aria-label="GitHub">
+                <img src="img/iconos/github-icon.svg" alt="icon-git">
+            </a>
+            <div class="w3-dropdown-hover w3-right">
+                <button class="w3-button">Informacion</button>
+                <div class="w3-dropdown-content w3-card-4">
+                    <a href="#portafolio"
+                        class="w3-bar-item w3-button w3-round-large w3-hover-light-grey">Portafolio</a>
+                    <a href="#skills" class="w3-bar-item w3-button w3-round-large w3-hover-light-grey">Habilidades</a>
+                    <a href="#contacto" class="w3-bar-item w3-button w3-round-large w3-hover-light-grey">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="w3-container negro">
+        <div class="w3-display-container w3-text-white">
+            <img src="yo2.png" alt="Lights" style="width:100%">
+            <div class="w3-display-middle w3-center w3-large">
+                <h1>Estudiante de Ingeniería Informática</h1>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="welcome" class="hero">
+            <div class="hero-content">
+                <h1 style="text-align: center;">Sobre mí</h1>
+                <p class="about-me">
+                    ¡Hola! Soy Jhesica, una estudiante apasionada por la tecnología en la Universidad Mayor de San
+                    Simón. Me encanta cómo el código puede transformar ideas en realidad y me motiva cada día a
+                    aprender más.
+                    Desde programación funcional y POO hasta bajo nivel, pruebas unitarias y trabajo en equipo ágil
+                    (Scrum),
+                    todo me fascina. Pero lo que realmente me enciende es el mundo de las redes: conectar personas,
+                    compartir conocimiento y ver cómo la tecnología une comunidades.
+                    Estoy en constante aprendizaje, construyendo proyectos que me desafían y soñando con contribuir
+                    a algo más grande. ¿Te animas a charlar de código o colaborar en algo interesante?
+                </p>
+            </div>
+        </section>
+
+        <section id="formacion" class="section-curriculum">
+            <div class="curriculum-grid w3-row-padding">
+                <br>
+                <!-- Formación Académica -->
+                <div class="w3-col s12 m6 l4 w3-margin-bottom">
+                    <div class="w3-round-large w3-padding w3-green">
+                        <h2 class="w3-xlarge">Formación Académica</h2>
+
+                        <div class="timeline-content">
+                            <h3>Ingeniería Informática</h3>
+                            <p class="timeline-institution">Universidad Mayor de San Simón</p>
+                            <span>2024 – Actualidad</span>
+                            <h3>Programacion en Java</h3>
+                            <p class="timeline-institution">TodoCode Academy</p>
+                            <span>2024 – 2025</span>
+                            <h3>Redes de Computadoras</h3>
+                            <p class="timeline-institution">NASeros</p>
+                            <span>2026 – Actualidad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experiencia en Trabajo en Equipo -->
+                <div class="w3-col s12 m6 l4 w3-margin-bottom">
+                    <div class=" w3-round-large w3-padding verde-oscuro w3-round-medium">
+                        <h2 class="w3-xlarge">Experiencia en Equipo</h2>
+
+                        <p>Participación en proyectos académicos bajo metodología <strong
+                                class="w3-text-dark-grey">Scrum</strong>,
+                            incluyendo:</p>
+                        <ul class="w3-panel w3-ul w3-margin-bottom">
+                            <li>Planificación de sprints</li>
+                            <li>Definición de historias de usuario</li>
+                            <li>Modelado UML</li>
+                            <li>Desarrollo colaborativo</li>
+                        </ul>
+                        <br>
+                        <br>
+                        <div><span class="w3-round-large w3-red w3-padding-large w3-text-white">Metodología Ágil ·
+                                Scrum</span></div>
+                        <br>
+
+                    </div>
+                </div>
+
+                <!-- Intereses Profesionales -->
+                <div class="w3-col s12 m6 l4 w3-margin-bottom">
+                    <div class=" w3-round-large w3-padding w3-green">
+                        <h2 class="w3-xlarge">Intereses Profesionales</h2>
+
+                        <div>
+                            <div class="interest-item"><span class="interest-label">Ingeniería de Software</span></div>
+                            <div class="interest-item"><span class="interest-label">Desarrollo Backend</span></div>
+                            <div class="interest-item"><span class="interest-label">Calidad y Arquitectura de
+                                    Software</span></div>
+                            <div class="interest-item"><span class="interest-label">Ciberseguridad</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="portafolio" class="section-projects">
+            <h3 class="w3-center w3-xlarge">Proyectos Académicos Destacados</h3>
+            <div class="projects-grid w3-row-padding">
+                <div class="project-card w3-col s12 m6 l4 w3-margin-bottom">
+                    <div class="w3-round-large w3-padding w3-green">
+                        <h3>Sistema de Recetas Saludables – Java (TDD)</h3>
+
+                        <ul>
+                            <li>Desarrollo bajo metodología TDD (Red-Green-Refactor).</li>
+                            <li>Implementación de pruebas unitarias con JUnit y Mockito.</li>
+                            <li>Validación de reglas de negocio y filtrado dinámico por ingredientes.</li>
+                            <li>Aplicación de principios de diseño orientado a objetos.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card w3-col s12 m6 l4 w3-margin-bottom">
+                    <div class="w3-round-large w3-padding verde-oscuro">
+                        <h3>Sistema de Gestión de Productos – Assembly x86 (Radasm)</h3>
+                        <ul>
+                            <li>Desarrollo de aplicación en ensamblador x86 con interfaz básica.</li>
+                            <li>Implementación de registro y administración de productos.</li>
+                            <li>Manejo manual de memoria y estructuras de datos.</li>
+                            <li>Compilación y ejecución en entorno Radasm con uso de OllyDB.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card w3-col s12 m6 l4 w3-margin-bottom">
+                    <div class="w3-round-large w3-padding w3-green">
+                        <h3>Juego tipo Snake – Assembly 8086 (emu8086)</h3>
+                        <ul>
+                            <li>Desarrollo completo del juego utilizando ensamblador 8086.</li>
+                            <li>Implementación de lógica de movimiento en tiempo real.</li>
+                            <li>Sistema de detección de colisiones y contador dinámico de puntuación.</li>
+                            <li>Manipulación directa de memoria y renderizado en modo texto.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="w3-container w3-padding-64">
+            <div class="w3-content" style="max-width: 1200px; margin: auto;">
+                <h2 class="w3-center w3-xxlarge w3-text-dark-grey w3-margin-bottom">Habilidades Técnicas</h2>
+
+
+                <div class="w3-row-padding">
+                    <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                        <div class="skill-item w3-center w3-card w3-white w3-padding w3-round-large">
+                            <img src="img/logoApp/javaO-removebg-preview.png" alt="Logo Java"
+                                style="width: 70px; height: 70px; object-fit: contain;">
+                            <span class="w3-block w3-margin-top w3-text-dark-grey">Java</span>
+                        </div>
+                    </div>
+
+                    <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                        <div class="skill-item w3-center w3-card w3-white w3-padding w3-round-large">
+                            <img src="img/logoApp/asm-removebg-preview.png" alt="Logo ASM"
+                                style="width: 70px; height: 70px; object-fit: contain;">
+                            <span class="w3-block w3-margin-top w3-text-dark-grey">Assembly</span>
+                        </div>
+                    </div>
+
+                    <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                        <div class="skill-item w3-center w3-card w3-white w3-padding w3-round-large">
+                            <img src="img/logoApp/haskellO.png" alt="Logo Haskell"
+                                style="width: 70px; height: 70px; object-fit: contain;">
+                            <span class="w3-block w3-margin-top w3-text-dark-grey">Haskell</span>
+                        </div>
+                    </div>
+
+                    <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                        <div class="skill-item w3-center w3-card w3-white w3-padding w3-round-large">
+                            <img src="img/logoApp/python.png" alt="Logo Python"
+                                style="width: 70px; height: 70px; object-fit: contain;">
+                            <span class="w3-block w3-margin-top w3-text-dark-grey">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                        <div class="skill-item w3-center w3-card w3-white w3-padding w3-round-large">
+                            <img src="img/logoApp/c++.png" alt="Logo C++"
+                                style="width: 70px; height: 70px; object-fit: contain;">
+                            <span class="w3-block w3-margin-top w3-text-dark-grey">C++</span>
+                        </div>
+                    </div>
+
+                    <div class="w3-col s6 m4 l2 w3-margin-bottom">
+                        <div class="skill-item w3-center w3-card w3-white w3-padding w3-round-large">
+                            <img src="img/logoApp/mysql.png" alt="Logo MySQL"
+                                style="width: 70px; height: 70px; object-fit: contain;">
+                            <span class="w3-block w3-margin-top w3-text-dark-grey">MySQL</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section-contact w3-container">
+            <div class="w3-content" style="max-width: 700px; margin: auto;">
+                <h3 class="w3-center w3-xxlarge">Contáctame</h3>
+                <p class="lead-text w3-center w3-text-grey">
+                    ¿Quieres colaborar en algún proyecto o simplemente charlar de código? ¡Escríbeme!
+                </p>
+
+                <form class="w3-card-4 w3-light-grey w3-padding-32 w3-margin-top"
+                    action="https://formspree.io/f/mdawwvpj" method="POST">
+                    <input class="w3-input w3-border w3-round-xlarge" type="text" name="nombre" placeholder="NOMBRE" required>
+                    <input class="w3-input w3-border w3-round-xlarge" type="email" name="email" placeholder="EMAIL" required>
+                    <textarea class="w3-input w3-border w3-round-xlarge" name="mensaje" placeholder="ESCRIBIR UN MENSAJE..."
+                        rows="6" required></textarea>
+                    <button class="w3-button w3-block w3-green w3-section w3-ripple w3-round" type="submit">
+                        Enviar
+                    </button>
+                    <input type="hidden" name="_next" value="https://Elimoncc.github.io/nombre-de-tu-repo">
+                </form>
+                <br>
+            </div>
+        </section>
+    </main>
+
+    <footer class="verde">
+        <p>© 2026 - Diseñado y Desarrollado por Jhesica Cespedes</p>
+        <p id="contact">Contacto: (+591) 65502953</p>
+        <p>Cochabamba, Bolivia</p>
+        <p>Redes sociales:</p>
+        <div class="social-links" id="redes">
+            <a href="https://www.facebook.com/jhesica.cespedesencinas" target="_blank" rel="noopener noreferrer"><img
+                    src="img/iconos/facebook.png" alt="Facebook"></a>
+            <a href="mailto:bejhesce@gmail.com"><img src="img/iconos/email.png" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/jhesica-cespedes-encinas-3129293b7" target="_blank"
+                rel="noopener noreferrer"><img src="img/iconos/link-removebg-preview.png" alt="Linkedin"></a>
+            <a href="https://github.com/Elimoncc" target="_blank" rel="noopener noreferrer"><img
+                    src="img/iconos/github.png" alt="GitHub"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
